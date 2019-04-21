@@ -1,6 +1,10 @@
 <template>
-  <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
-    <slot></slot>
+  <div
+    class="banner"
+    :style="bannerStyles"
+    :class="`banner__${position}`"
+  >
+    <slot />
   </div>
 </template>
 <script>

@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <JaffaBanner>This is a banner!</JaffaBanner>
+    <JaffaBar :boxes="[]" />
   </div>
 </template>
 

@@ -1,8 +1,10 @@
 import Vue from "vue";
 import JaffaBanner from "./Banner.vue";
+import JaffaBar from "./Bar.vue";
 
 const Components = {
-  JaffaBanner
+  JaffaBanner,
+  JaffaBar
 };
 
 Object.keys(Components).forEach(name => {
