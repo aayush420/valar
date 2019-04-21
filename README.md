@@ -1,6 +1,9 @@
 # valar
 
-[![Build Status](https://travis-ci.org/aayush420/valar.svg?branch=master)](https://travis-ci.org/aayush420/valar)
+[![CircleCI](https://circleci.com/gh/aayush420/valar.svg?style=svg)](https://circleci.com/gh/aayush420/valar)
+[![npm version](https://badge.fury.io/js/valar.svg)](https://badge.fury.io/js/valar)
+[![Known Vulnerabilities](https://snyk.io/test/github/aayush420/valar/badge.svg)](https://snyk.io/test/github/aayush420/valar)
+[![dependencies](https://david-dm.org/aayush420/valar.svg)](https://github.com/aayush420/valar)
 
 ## Project setup
 ```
