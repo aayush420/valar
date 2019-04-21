@@ -1,5 +1,7 @@
 # valar
 
+[![Build Status](https://travis-ci.org/aayush420/valar.svg?branch=master)](https://travis-ci.org/aayush420/valar)
+
 ## Project setup
 ```
 npm install
