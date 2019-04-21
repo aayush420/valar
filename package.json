@@ -51,5 +51,25 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayush420/valar.git"
+  },
+  "keywords": [
+    "vue",
+    "vue.js",
+    "charts",
+    "graph",
+    "lightweight",
+    "minimal",
+    "zero-config"
+  ],
+  "author": "aayush420 <balkripra.1996@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aayush420/valar/issues"
+  },
+  "homepage": "https://github.com/aayush420/valar#readme"
 }
