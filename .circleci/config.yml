@@ -21,10 +21,10 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
       - run:
           name: Run tests
-          command: npm run test:unit
+          command: yarn test:unit
 
       - save_cache:
           paths:
