@@ -1,34 +1,37 @@
-# valar
+# vue-clock-simple
 
-[![CircleCI](https://circleci.com/gh/aayush420/valar.svg?style=svg)](https://circleci.com/gh/aayush420/valar)
-[![npm version](https://badge.fury.io/js/valar.svg)](https://badge.fury.io/js/valar)
-[![Known Vulnerabilities](https://snyk.io/test/github/aayush420/valar/badge.svg)](https://snyk.io/test/github/aayush420/valar)
-[![dependencies](https://david-dm.org/aayush420/valar.svg)](https://github.com/aayush420/valar)
+A Vue component that shows a clock.
 
-## Project setup
-```
-npm install
-```
+This isn't particularly useful, it's used as a demo for how to publish Vue components to NPM!
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Installation
+
+```js
+npm i --save-dev vue-clock-simple
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+### Browser
+
+Include the script file, then install the component with `Vue.use(VueClock);` e.g.:
+
+```html
+<script type="text/javascript" src="node_modules/vuejs/dist/vue.min.js"></script>
+<script type="text/javascript" src="node_modules/vue-clock-simple/dist/vue-clock.min.js"></script>
+<script type="text/javascript">
+  Vue.use(VueClock);
+</script>
 ```
 
-### Run your tests
-```
-npm run test
+### Module
+
+```js
+import VueClock from 'vue-clock-simple';
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Usage
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Once installed, it can be used in a template as simply as:
+
+```html
+<vue-clock></vue-clock>
+```
