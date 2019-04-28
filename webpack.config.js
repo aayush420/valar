@@ -1,41 +1,35 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 var config = {
-  output: {
-    path: path.resolve(__dirname + '/dist/'),
-  },
+  mode: 'development',
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        include: __dirname,
-        exclude: /node_modules/
-      },
+    rules: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue-loader'
       },
+      // this will apply to both plain `.js` files
+      // AND `<script>` blocks in `.vue` files
+      // {
+      //   test: /\.js$/,
+      //   loader: 'babel-loader'
+      // },
+      // this will apply to both plain `.css` files
+      // AND `<style>` blocks in `.vue` files
       {
         test: /\.css$/,
-        loader: 'style!less!css'
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ]
       }
     ]
   },
-  externals: {
-    moment: 'moment'
-  },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin( {
-      minimize : true,
-      sourceMap : false,
-      mangle: true,
-      compress: {
-        warnings: false
-      }
-    } )
+         new VueLoaderPlugin()
   ]
 };
 
