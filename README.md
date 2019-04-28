@@ -1,37 +1,29 @@
-# vue-clock-simple
+# valar1
 
-A Vue component that shows a clock.
-
-This isn't particularly useful, it's used as a demo for how to publish Vue components to NPM!
-
-## Installation
-
-```js
-npm i --save-dev vue-clock-simple
+## Project setup
+```
+yarn install
 ```
 
-### Browser
-
-Include the script file, then install the component with `Vue.use(VueClock);` e.g.:
-
-```html
-<script type="text/javascript" src="node_modules/vuejs/dist/vue.min.js"></script>
-<script type="text/javascript" src="node_modules/vue-clock-simple/dist/vue-clock.min.js"></script>
-<script type="text/javascript">
-  Vue.use(VueClock);
-</script>
+### Compiles and hot-reloads for development
+```
+yarn run serve
 ```
 
-### Module
-
-```js
-import VueClock from 'vue-clock-simple';
+### Compiles and minifies for production
+```
+yarn run build
 ```
 
-## Usage
-
-Once installed, it can be used in a template as simply as:
-
-```html
-<vue-clock></vue-clock>
+### Run your tests
 ```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
