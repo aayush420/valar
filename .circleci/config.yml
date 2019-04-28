@@ -43,9 +43,6 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
-          name: Build package
-          command: yarn build-bundle
-      - run:
           name: Publish package
           command: yarn publish
 

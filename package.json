@@ -1,21 +1,64 @@
 {
   "private": false,
   "name": "valar",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A Vue.js component that displays a chart",
   "author": "aayush420 <balkripra.1996@gmail.com>",
   "main": "./dist/index.cjs.js",
   "scripts": {
     "dev": "vue serve NiceHandsomeButton.vue",
-    "build": "bili --name index --plugin vue --vue.css false"
+    "build": "bili --name index --plugin vue --vue.css false",
+    "test:unit": "vue-cli-service test:unit"
   },
   "files": [
     "dist/*"
   ],
   "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-plugin-unit-mocha": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
     "bili": "^3.4.2",
+    "chai": "^4.1.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "lint-staged": "^8.1.5",
     "rollup-plugin-vue": "^4.6.1",
     "vue-template-compiler": "^2.5.22"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue},!dist/*.*": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   },
   "bugs": {
     "url": "https://github.com/aayush420/valar/issues"
